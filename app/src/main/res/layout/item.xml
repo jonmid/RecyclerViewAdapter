@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <!-- INICIO ITEM -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/border_radius">
+        <!-- INICIO HEADER -->
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/id_img_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/person"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:id="@+id/id_tv_item_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/id_img_1"/>
+            <TextView
+                android:id="@+id/id_tv_item_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="titulo"
+                android:textSize="12sp"
+                android:layout_below="@id/id_tv_item_email"
+                android:layout_alignLeft="@id/id_tv_item_email"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
